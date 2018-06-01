@@ -90,3 +90,25 @@ snegovik (Sx, Sy, 9, 0);
 snegovik (Sx1, Sy1, 9, 0);
 snegovik (Sx2, Sy2, 9, 0);
 snegovik (Sx3, Sy3, 9, 0);
+
+krug:
+while (1)
+{
+                 for (int shagi=1; shagi <160; shagi++)
+{
+snegovik ( Sx, Sy, 0, 0);
+Sx++;
+snegovik ( Sx, Sy, 9,0 );
+
+snegovik ( Sx1, Sy1, 0, 0);
+Sx1++;
+snegovik ( Sx1, Sy1, 9,0 );
+
+snegovik ( Sx2, Sy2, 0, 0);
+Sx2--;
+snegovik ( Sx2, Sy2, 9,0 );
+
+snegovik ( Sx3, Sy3, 0, 0);
+Sx3--;
+snegovik ( Sx3, Sy3, 9,0 );
+

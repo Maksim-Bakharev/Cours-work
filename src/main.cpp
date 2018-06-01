@@ -112,3 +112,14 @@ snegovik ( Sx3, Sy3, 0, 0);
 Sx3--;
 snegovik ( Sx3, Sy3, 9,0 );
 
+{
+if (kbhit())
+{
+k=getch();
+setcolor(RED);
+outtextxyT( 580, 22, score);
+setcolor(RED);
+outtextxyJ( 580, 40, chel);
+setcolor(RED);
+outtextxy( 580, 5, lvl);
+
