@@ -493,3 +493,36 @@ loose (score,Knopka);
 goto krug;
 
 }
+
+if ( k == 27 )
+{
+closegraph();
+goto LABLE;
+}
+
+Siel1 = getpixel(x, y+20);
+Siel2 = getpixel(x, y-21);
+Siel3 = getpixel(x+20, y);
+Siel4 = getpixel(x-21, y);
+if ((Siel1 == 14) || (Siel1 == 5)) {  ykrachenia (x, y+30, 0, 0); score++;  }
+if ((Siel2 == 14) || (Siel2 == 5)) {  ykrachenia (x, y-30, 0, 0); score++;  }
+if ((Siel3 == 14) || (Siel3 == 5)) {  ykrachenia (x+30, y, 0, 0); score++;  }
+if ((Siel4 == 14) || (Siel4 == 5)) {  ykrachenia (x-30, y, 0, 0); score++;  }
+
+if (score==1) {setcolor(YELLOW);  ykrachenia(723,300,14,0);}
+if (score==2) {setcolor(YELLOW);  ykrachenia(700,300,14,0);}
+if (score==3) {setcolor(YELLOW);  ykrachenia(778,300,14,0);}
+if (score==4) {setcolor(YELLOW);  ykrachenia(801,300,14,0);}
+if (score==5) {setcolor(YELLOW);  ykrachenia(824,300,14,0);}
+if (score==6) {setcolor(YELLOW);  ykrachenia(677,300,14,0);}
+if (score==7) {setcolor(YELLOW);  ykrachenia(723,280,14,0);}
+if (score==8) {setcolor(YELLOW);  ykrachenia(700,280,14,0);}
+if (score==9) {setcolor(YELLOW);  ykrachenia(778,280,14,0);}
+if (score==10) {setcolor(YELLOW); ykrachenia(801,280,14,0);}
+if (score==11) {setcolor(YELLOW); ykrachenia(723,260,14,0);}
+if (score==12) {setcolor(YELLOW); ykrachenia(778,260,14,0);}
+if (score>12) {setcolor(5); zvezda(750,230,5,5); Flag1++; vixod(name,Knopka);}
+}
+}
+}
+}
