@@ -208,3 +208,20 @@ Polochenie=0;
 }
 }
 
+if ((x<=10) || (y<=10) || (y>=590))
+{
+if (Polochenie==0) VNIZ ( x, y, 0, 0);
+if (Polochenie==1) VERH ( x, y, 0, 0);
+if (Polochenie==2) PRAVO ( x, y, 0, 0);
+if (Polochenie==3) LEVO ( x, y, 0, 0);
+closegraph();
+printf ("\n   ÊÎÍÅÖ ÈÃÐÛ!!!\n\nÂû íàáðàëè %d î÷êà(îâ)\n", score);
+goto LABLE;
+}
+
+if (score==chel) 
+{
+setcolor(BLACK);
+moveto (540, 260);    
+lineto (540, 339);  
+}
