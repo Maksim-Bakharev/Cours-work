@@ -24,10 +24,12 @@ outtextxy(140, 350, "Bakharev Maksim");
 outtextxy(140, 400, "Koroteev Maksim");
 outtextxy(140, 450, "Pachenko Andrew");
 
+//Records//
 time=clock()/1000.0;
 ofstream fp("TABL.txt", ios::app);
 fp<< name <<": "<< time << endl;
 fp.close();
+//Records//
 
 LABLE2:
 {

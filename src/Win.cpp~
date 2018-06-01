@@ -14,6 +14,7 @@ using namespace std;
 int vixod (char name[21], int Knopka)
 {
 float time=0;
+
 closegraph();
 initwindow(900,900);
 settextstyle(0,HORIZ_DIR,5);
