@@ -21,7 +21,6 @@ int vixod (char name[21], int Knopka) {
     outtextxy(140, 250, "RAZRABOTCHIKI:");
     outtextxy(140, 350, "Bakharev Maksim"); 
     outtextxy(140, 400, "Koroteev Maksim");
-    outtextxy(140, 450, "Pachenko Andrew");
 
     //Records//
     time = clock()/1000.0;
