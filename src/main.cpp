@@ -54,3 +54,25 @@ main ()
            if (go==1)
            {
                  Labirint();
+
+x = 300; y = 300;
+                 VNIZ ( x, y, 15, 0 );
+
+setcolor(RED);
+outtextxy( 555, 5, "Lvl: ");
+setcolor(RED);
+outtextxy( 538, 22, "Score: ");
+setcolor(RED);
+outtextxy( 551, 40, "Aim: ");
+
+setcolor(WHITE);
+outtextxy( 547, 240, "Next lvl");
+
+
+if (lvl == 1)
+{
+Yx=100; Yy=500; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=100; Yy=100; ykrachenia ( Yx, Yy, 14, 14 );  
+Yx=500; Yy=500; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=500; Yy=100; ykrachenia ( Yx, Yy, 14, 14 );
+}
