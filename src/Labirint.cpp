@@ -9,6 +9,7 @@
 #include <ctime>
 #include <fstream>
 
+
 int Labirint ()
 {
     initwindow (900, 601);
