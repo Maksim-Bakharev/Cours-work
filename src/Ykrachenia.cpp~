@@ -9,7 +9,6 @@
 #include <ctime>
 #include <fstream>
 
-
 void ykrachenia ( int o, int p, int color1,int color2 )
 { 
      setcolor(color1);
