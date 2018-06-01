@@ -123,3 +123,63 @@ outtextxyJ( 580, 40, chel);
 setcolor(RED);
 outtextxy( 580, 5, lvl);
 
+if ( k == 75)
+{
+Stena = getpixel(x-21, y);
+if (Stena!=4)
+{
+if (Polochenie==0) VNIZ ( x, y, 0, 0);
+if (Polochenie==1) VERH ( x, y, 0, 0);
+if (Polochenie==2) PRAVO ( x, y, 0, 0);
+if (Polochenie==3) LEVO ( x, y, 0, 0);
+x-=5;
+LEVO ( x, y, 15,0 );
+Polochenie=3;
+}
+}
+
+if ( k == 72)
+{
+Stena = getpixel(x, y-21);
+if (Stena!=4)
+{
+if (Polochenie==0) VNIZ ( x, y, 0, 0);
+if (Polochenie==1) VERH ( x, y, 0, 0);
+if (Polochenie==2) PRAVO ( x, y, 0, 0);
+if (Polochenie==3) LEVO ( x, y, 0, 0);
+y-=5;
+VERH ( x, y, 15,0 );
+Polochenie=1;
+}
+}
+
+if ( k == 77)
+{
+Stena = getpixel(x+20, y);
+if (Stena!=4)
+{
+if (Polochenie==0) VNIZ ( x, y, 0, 0);
+if (Polochenie==1) VERH ( x, y, 0, 0);
+if (Polochenie==2) PRAVO ( x, y, 0, 0);
+if (Polochenie==3) LEVO ( x, y, 0, 0);
+x+=5;
+PRAVO ( x, y, 15,0 );
+Polochenie=2;
+}
+}
+
+if ( k == 80)
+{  
+Stena = getpixel(x, y+20);
+if (Stena!=4)
+{
+if (Polochenie==0) VNIZ ( x, y, 0, 0);
+if (Polochenie==1) VERH ( x, y, 0, 0);
+if (Polochenie==2) PRAVO ( x, y, 0, 0);
+if (Polochenie==3) LEVO ( x, y, 0, 0);
+y+=5;
+VNIZ ( x, y, 15,0 );
+Polochenie=0;
+}
+}
+
