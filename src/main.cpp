@@ -252,3 +252,17 @@ Yx=410; Yy=190; ykrachenia ( Yx, Yy, 14, 14 );
 Yx=500; Yy=500; ykrachenia ( Yx, Yy, 14, 14 ); 
 Yx=500; Yy=100; ykrachenia ( Yx, Yy, 14, 14 ); 
 }
+
+if (lvl==2)
+{
+chel=13;
+setcolor(RED);
+moveto (540, 260);    
+lineto (540, 339);
+
+Zx= 100; Zy=300;
+ykrachenia ( Zx, Zy, 5, 5); 
+}
+lvl++;          
+}
+}
