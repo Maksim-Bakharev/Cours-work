@@ -1,0 +1,10 @@
+#include <graphics.h>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+#include <ctime>
+#include <fstream>
