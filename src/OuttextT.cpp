@@ -10,9 +10,8 @@
 #include <fstream>
 
 
-void outtextxyT(int x, int y, int t)
-{
-     char baf[3];
-     snprintf(baf, sizeof(baf), "%d", t);
-     outtextxy(x, y, baf);
+void outtextxyT(int x, int y, int t) {
+    char baf[3];
+    snprintf(baf, sizeof(baf), "%d", t);
+    outtextxy(x, y, baf);
 }

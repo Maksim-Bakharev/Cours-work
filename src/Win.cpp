@@ -11,31 +11,28 @@
 
 using namespace std;
 
-int vixod (char name[21], int Knopka)
-{
-float time=0;
+int vixod (char name[21], int Knopka) {
+    float time = 0;
 
-closegraph();
-initwindow(900,900);
-settextstyle(0,HORIZ_DIR,5);
-outtextxy(140, 150, "YOU WIN!!!" );
-outtextxy(140, 250, "RAZRABOTCHIKI:");
-outtextxy(140, 350, "Bakharev Maksim"); 
-outtextxy(140, 400, "Koroteev Maksim");
-outtextxy(140, 450, "Pachenko Andrew");
+    closegraph();
+    initwindow(900, 900);
+    settextstyle(0, HORIZ_DIR, 5);
+    outtextxy(140, 150, "YOU WIN!!!");
+    outtextxy(140, 250, "RAZRABOTCHIKI:");
+    outtextxy(140, 350, "Bakharev Maksim"); 
+    outtextxy(140, 400, "Koroteev Maksim");
+    outtextxy(140, 450, "Pachenko Andrew");
 
-//Records//
-time=clock()/1000.0;
-ofstream fp("TABL.txt", ios::app);
-fp<< name <<": "<< time << endl;
-fp.close();
-//Records//
+    //Records//
+    time = clock()/1000.0;
+    ofstream fp("TABL.txt", ios::app);
+    fp<< name <<": "<< time << endl;
+    fp.close();
+    //Records//
 
-LABLE2:
-{
-Knopka=getch();
-if (Knopka==27)
-return 0;
-else goto LABLE2;
-}
+    LABLE2: {
+        Knopka = getch();
+        if (Knopka == 27) return 0;
+        else goto LABLE2;
+    }
 }

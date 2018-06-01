@@ -9,9 +9,8 @@
 #include <ctime>
 #include <fstream>
 
-void outtextxy(int x, int y, int lvl)
-{
-     char buf[3];
-     snprintf(buf, sizeof(buf), "%d", lvl);
-     outtextxy(x, y, buf);
+void outtextxy(int x, int y, int lvl) {
+    char buf[3];
+    snprintf(buf, sizeof(buf), "%d", lvl);
+    outtextxy(x, y, buf);
 }

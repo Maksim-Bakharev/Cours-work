@@ -9,9 +9,8 @@
 #include <ctime>
 #include <fstream>
 
-void outtextxyJ(int x, int y, int j)
-{
-     char bif[3];
-     snprintf(bif, sizeof(bif), "%d", j);
-     outtextxy(x, y, bif);
+void outtextxyJ(int x, int y, int j) {
+    char bif[3];
+    snprintf(bif, sizeof(bif), "%d", j);
+    outtextxy(x, y, bif);
 }
