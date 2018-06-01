@@ -485,6 +485,7 @@ loose (score,Knopka);
 
 END = getpixel(x, y-21);
 if (END==9)
+
 { 
 loose (score,Knopka);
 } 
