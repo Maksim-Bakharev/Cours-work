@@ -225,3 +225,44 @@ setcolor(BLACK);
 moveto (540, 260);    
 lineto (540, 339);  
 }
+
+if (x>=585)
+{
+if (Polochenie==0) VNIZ ( x, y, 0, 0);
+if (Polochenie==1) VERH ( x, y, 0, 0);
+if (Polochenie==2) PRAVO ( x, y, 0, 0);
+if (Polochenie==3) LEVO ( x, y, 0, 0);       
+x=300; y=300;  
+VNIZ ( x, y, 15,0 );  
+Polochenie=0;  
+
+if (lvl==1)
+{
+chel=12;
+setcolor(RED);
+moveto (540, 260);    
+lineto (540, 339);
+ 
+Yx=100; Yy=500; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=100; Yy=100; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=190; Yy=190; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=410; Yy=410; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=190; Yy=410; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=410; Yy=190; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=500; Yy=500; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=500; Yy=100; ykrachenia ( Yx, Yy, 14, 14 ); 
+}
+
+if (lvl==2)
+{
+chel=13;
+setcolor(RED);
+moveto (540, 260);    
+lineto (540, 339);
+
+Zx= 100; Zy=300;
+ykrachenia ( Zx, Zy, 5, 5); 
+}
+lvl++;          
+}
+}
