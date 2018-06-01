@@ -434,4 +434,60 @@ x=300; y=300;
 VNIZ ( x, y, 15,0 );  
 Polochenie=0;  
 
+if (lvl==1)
+{
+chel=12;
+setcolor(RED);
+moveto (540, 260);    
+lineto (540, 339);
+ 
+Yx=100; Yy=500; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=100; Yy=100; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=190; Yy=190; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=410; Yy=410; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=190; Yy=410; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=410; Yy=190; ykrachenia ( Yx, Yy, 14, 14 );
+Yx=500; Yy=500; ykrachenia ( Yx, Yy, 14, 14 ); 
+Yx=500; Yy=100; ykrachenia ( Yx, Yy, 14, 14 ); 
+}
 
+if (lvl==2)
+{
+chel=13;
+setcolor(RED);
+moveto (540, 260);    
+lineto (540, 339);
+Zx= 100; Zy=300;
+ykrachenia ( Zx, Zy, 5, 5); 
+}
+
+lvl++;         
+}
+}
+
+END = getpixel(x+20, y);
+if (END==9)
+{ 
+loose (score,Knopka);
+}  
+
+END = getpixel(x-21, y);
+if (END==9)
+{ 
+loose (score,Knopka);
+} 
+
+END = getpixel(x, y+20);
+if (END==9)
+{ 
+loose (score,Knopka);
+} 
+
+END = getpixel(x, y-21);
+if (END==9)
+{ 
+loose (score,Knopka);
+} 
+}
+goto krug;
+}

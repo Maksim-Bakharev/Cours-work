@@ -490,4 +490,5 @@ loose (score,Knopka);
 } 
 }
 goto krug;
+
 }
