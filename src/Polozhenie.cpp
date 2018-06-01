@@ -9,6 +9,7 @@
 #include <ctime>
 #include <fstream>
 
+
 void VNIZ ( int x, int y, int color1,int color2 )
 {
      setcolor(color1);
