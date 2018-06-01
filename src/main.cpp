@@ -76,3 +76,17 @@ Yx=100; Yy=100; ykrachenia ( Yx, Yy, 14, 14 );
 Yx=500; Yy=500; ykrachenia ( Yx, Yy, 14, 14 ); 
 Yx=500; Yy=100; ykrachenia ( Yx, Yy, 14, 14 );
 }
+
+
+int Sx, Sy, Sx1, Sy1, Sx2, Sy2, Sx3, Sy3;
+Sx = 220; Sy = 185; 
+Sx1= 220; Sy1= 385;
+Sx2= 380; Sy2=  85;
+Sx3= 380; Sy3= 485; 
+
+while (1)
+{  
+snegovik (Sx, Sy, 9, 0);
+snegovik (Sx1, Sy1, 9, 0);
+snegovik (Sx2, Sy2, 9, 0);
+snegovik (Sx3, Sy3, 9, 0);
