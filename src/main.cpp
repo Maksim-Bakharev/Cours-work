@@ -266,3 +266,28 @@ ykrachenia ( Zx, Zy, 5, 5);
 lvl++;          
 }
 }
+
+END = getpixel(x+20, y);
+if (END==9)
+{ 
+loose (score,Knopka);
+}  
+
+END = getpixel(x-21, y);
+if (END==9)
+{ 
+loose (score,Knopka);
+} 
+
+END = getpixel(x, y+20);
+if (END==9)
+{ 
+loose (score,Knopka);
+} 
+
+END = getpixel(x, y-21);
+if (END==9)
+{ 
+loose (score,Knopka);
+} 
+}
